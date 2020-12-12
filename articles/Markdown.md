@@ -1,3 +1,8 @@
+---
+layout: default
+title: Markdown语法
+---
+
 # Heading level 1
 ###### Heading level 6 {#custom-id}
 
