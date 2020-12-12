@@ -1,5 +1,5 @@
 # Heading level 1
-###### Heading level 6
+###### Heading level 6 {#custom-id}
 
 Heading level 1	
 ===============
@@ -23,6 +23,8 @@ The ***Italic blod*** text.
 The ___Italic blod___ text. 
 The __*Italic blod*__ text. 
 The **_Italic blod_** text. 
+
+~~The world is flat.~~
 
 > safcsd
 > 
@@ -58,9 +60,33 @@ The **_Italic blod_** text.
 
 * Here's the second list item.
 
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+
+| Syntax | Description | Test Text |
+| :--- | :----: | ---: |
+| Header | Title | Here's this |
+| Paragraph | Text | And more |
+
 Use `code` in your Markdown file.
 ``Use `code` in your Markdown file.``
 <br>
+```
+<html>
+    <head></head>
+```
+~~~
+<html>
+    <head></head>
+~~~
 Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
 
     <html>
@@ -82,15 +108,32 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
 
 ___
 
+You can use a backslash to escape the following characters.
+\\  \`  \*  \_  \{ \}  \[ \]  \( \)  \#  \+  \-  \.  \!  \|
+
+<br>
+it was a [footnote][1] in file last.
+<br>
+it was another footnote[^footnote] in file.
+<br>
+
 ![Markdown示例图片描述](https://ellanran.github.io/assets/images/MarkdownImageEg.png "示例图片")
 [![Markdown示例图片描述](https://ellanran.github.io/assets/images/MarkdownImageEg.png "示例图片")](https://www.exzample.com/)
 
 My github websit is [https://ellanran.github.io/](https://ellanran.github.io/ "ellanran的主页")
-See the section on [`XXXXX`](#xxxx).
+<br>
+See the section on [`XXXXX`](#custom-id).
+<br>
 link[my great page](https://www.example.com/my%20great%20page)
-it was a [footnote][1] in file last.
+<br>
 <https://ellanran.github.io/>
+<br>
+https://ellanran.github.io/
+<br>
+`https://ellanran.github.io/`
+<br>
 <599136946@qq.com>
 
 
 [1]: <https://www.example.com/> "footnote"
+[^footnote]: 脚注：巴拉巴拉
